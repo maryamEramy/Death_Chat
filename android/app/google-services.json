@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "264997629994",
+    "project_id": "death-chat-b3cf5",
+    "storage_bucket": "death-chat-b3cf5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264997629994:android:df0384e03111dc20d21353",
+        "android_client_info": {
+          "package_name": "com.example.flash_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkRCWjJsHqhCY0SOrKHb2rzGZIaSeKveI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
