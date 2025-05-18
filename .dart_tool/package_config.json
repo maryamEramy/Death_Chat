@@ -170,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "modal_progress_hud_nsn",
+      "rootUri": "file:///C:/Users/maryam/AppData/Local/Pub/Cache/hosted/pub.dev/modal_progress_hud_nsn-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/maryam/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",
@@ -254,7 +260,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-05-18T11:54:03.689261Z",
+  "generated": "2025-05-18T13:46:28.636332Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///C:/Users/maryam/dev/flutter",
