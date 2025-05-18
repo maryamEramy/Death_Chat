@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               onChanged: (value) {},
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 8),
             TextFormField(
               decoration: kTextFieldDecoration.copyWith(
                 hintText: 'Enter your password',

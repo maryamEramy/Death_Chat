@@ -72,6 +72,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
+            SizedBox(height: 8,),
             RoundedButton(
               color: Colors.orangeAccent[200]!,
               onPressed: () {

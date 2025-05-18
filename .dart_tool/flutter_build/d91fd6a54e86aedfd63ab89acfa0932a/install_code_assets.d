@@ -1,0 +1,1 @@
+ C:\\my\ flutter\ projects\\flash_chat\\.dart_tool\\flutter_build\\d91fd6a54e86aedfd63ab89acfa0932a\\native_assets.json: 
