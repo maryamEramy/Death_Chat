@@ -1,5 +1,4 @@
 import 'package:email_validator/email_validator.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat/components/rounded_button.dart';
 import 'package:flash_chat/constants.dart';
 import 'package:flash_chat/screens/chat_screen.dart';
@@ -41,9 +40,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 200, child: Image.asset('images/logo.png')),
-              SizedBox(height: 48.0),
-              SizedBox(height: 16),
+              SizedBox(height: 100, child: Image.asset('images/logo.png')),
+              // SizedBox(height: 48.0),
+              // SizedBox(height: 16),
               Form(
                 key: _formKey,
                 child: Column(
