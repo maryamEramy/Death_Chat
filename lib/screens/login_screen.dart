@@ -2,6 +2,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat/components/rounded_button.dart';
 import 'package:flash_chat/constants.dart';
+import 'package:flash_chat/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
@@ -19,7 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  var auth = FirebaseAuth.instance;
   String errorMessage = '';
   bool errorOccurred = false, showSpinner = false;
 
@@ -116,8 +116,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         errorOccurred = false;
                         showSpinner = true;
                       });
-                      await auth
-                          .signInWithEmailAndPassword(
+                      await AuthService()
+                          .signinUserWithEmailAndPassword(
                         email: _emailController.text,
                         password: _passwordController.text,
                       )
