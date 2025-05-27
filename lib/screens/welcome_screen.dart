@@ -51,17 +51,24 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     child: Image.asset('images/logo.png'),
                   ),
                 ),
-                DefaultTextStyle(
+                Text('DeAtH ChAt',
                   style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 45.0,
-                    color: Colors.white,
-                  ),
-                  child: AnimatedTextKit(
-                    totalRepeatCount: 1,
-                    animatedTexts: [TypewriterAnimatedText('DeAtH ChAt')],
-                  ),
+                        fontWeight: FontWeight.w900,
+                        fontSize: 45.0,
+                        color: Colors.white,
+                      ),
                 ),
+                // DefaultTextStyle(
+                //   style: TextStyle(
+                //     fontWeight: FontWeight.w900,
+                //     fontSize: 45.0,
+                //     color: Colors.white,
+                //   ),
+                //   child: AnimatedTextKit(
+                //     totalRepeatCount: 1,
+                //     animatedTexts: [TypewriterAnimatedText('DeAtH ChAt')],
+                //   ),
+                // ),
               ],
             ),
             SizedBox(height: 40),

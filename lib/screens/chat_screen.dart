@@ -16,16 +16,16 @@ class _ChatScreenState extends State<ChatScreen> {
   final _fireStore = FirebaseFirestore.instance;
   TextEditingController _messageTextController = TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black12,
       appBar: AppBar(
-        backgroundColor: kBackgroundColor,
+        backgroundColor: Colors.black12,
         automaticallyImplyLeading: false,
         actions: <Widget>[
           IconButton(
-            icon: const Icon(Icons.logout),
+            icon: Image.asset('images/grim-reaper.png'),
             onPressed: () {
               if (Navigator.canPop(context)) {
                 Navigator.pop(context);
@@ -34,7 +34,7 @@ class _ChatScreenState extends State<ChatScreen> {
             },
           ),
         ],
-        title: const Text('💀 Chat'),
+        title: const Text('DeAtH ChAt'),
       ),
       body: SafeArea(
         child: Column(
@@ -42,7 +42,11 @@ class _ChatScreenState extends State<ChatScreen> {
             Expanded(child: MessageStream(fireStore: _fireStore)),
             Container(
               decoration: kMessageContainerDecoration,
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10.0,
+                vertical: 8.0,
+              ),
+              margin: EdgeInsets.fromLTRB(10, 10, 10, 30),
               child: Row(
                 children: <Widget>[
                   Expanded(
@@ -58,11 +62,13 @@ class _ChatScreenState extends State<ChatScreen> {
                           'date': DateTime.now().millisecondsSinceEpoch,
                           'text': _messageTextController.text.trim(),
                           'sender': AuthService().getCurrentUser!.email,
+                          'senderName':
+                              AuthService().getCurrentUser!.displayName,
                         });
                         _messageTextController.clear();
                       }
                     },
-                    icon: const Icon(Icons.send, color: Colors.red),
+                    icon: Icon(Icons.send, color: Colors.red[700]),
                   ),
                 ],
               ),
@@ -76,23 +82,23 @@ class _ChatScreenState extends State<ChatScreen> {
 
 class MessageStream extends StatelessWidget {
   const MessageStream({Key? key, required FirebaseFirestore fireStore})
-      : _firestore = fireStore , super(key: key);
+    : _firestore = fireStore,
+      super(key: key);
 
   final FirebaseFirestore _firestore;
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _firestore
-          .collection('messages')
-          .orderBy('date', descending: true)
-          .snapshots(),
+      stream:
+          _firestore
+              .collection('messages')
+              .orderBy('date', descending: true)
+              .snapshots(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(
-            child: CircularProgressIndicator(
-              backgroundColor: Colors.lightBlue,
-            ),
+          return Center(
+            child: CircularProgressIndicator(backgroundColor: Colors.red[700]),
           );
         }
         if (snapshot.hasData) {
@@ -100,16 +106,17 @@ class MessageStream extends StatelessWidget {
           List<Widget> messageBubbles = [];
           for (var message in messages) {
             var messageText = message.get('text');
-            var sender = message.get('sender');
+            var senderEmail = message.get('sender');
+            var senderName = message.get('senderName');
             var messageBubble = MessageBubble(
               message: messageText,
-              sender: sender,
-              isMe: AuthService().getCurrentUser?.email == sender,
+              sender: senderName,
+              isMe: AuthService().getCurrentUser?.email == senderEmail,
             );
             messageBubbles.add(messageBubble);
           }
           return ListView(
-            reverse: true, // جدیدترین پیام پایین‌تر باشه
+            reverse: true,
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             children: messageBubbles,
           );

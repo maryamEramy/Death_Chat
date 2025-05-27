@@ -20,7 +20,7 @@ class MessageBubble extends StatelessWidget {
             bottomLeft: Radius.circular(bubbleRadius),
             bottomRight: Radius.circular(bubbleRadius),
           ),
-          color: isMe! ? kSendButtonColor :kSenderBoxColor,
+          color: isMe! ? kSenderBoxColor :kSendButtonColor,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             child: Column(
@@ -29,7 +29,7 @@ class MessageBubble extends StatelessWidget {
                   sender!,
                   style: TextStyle(fontSize: 12, color: kChatEmailColor),
                 ),
-                SizedBox(height: 8.0),
+                SizedBox(height: 6.0),
                 Text(
                   message!,
                   style: TextStyle(fontSize: 16),

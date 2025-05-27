@@ -17,6 +17,7 @@ class RegistrationScreen extends StatefulWidget {
 class _RegistrationScreenState extends State<RegistrationScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String errorMessage = '';
   bool errorOccurred = false, showSpinner = false;
@@ -49,6 +50,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   children: [
                     TextFormField(
                       decoration: kTextFieldDecoration.copyWith(
+                        hintText: 'Enter your name',
+                        labelText: 'Name',
+                      ),
+                      controller: _nameController,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
+                      validator: (name) {
+                        return name != null && name.isNotEmpty
+                            ? null
+                            : 'Please enter your name';
+                      },
+                    ),
+                    SizedBox(height: 8),
+                    TextFormField(
+                      decoration: kTextFieldDecoration.copyWith(
                         hintText: 'Enter your email',
                         labelText: 'Email',
                       ),
@@ -77,9 +92,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         ),
                       ),
                       controller: _passwordController,
-                      //pass security
                       obscureText: obscureText,
-                      //pas validation
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       validator: (password) {
                         return password != null && password.length > 5
@@ -110,15 +123,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         errorOccurred = false;
                         showSpinner = true;
                       });
+                      // در registration_screen.dart، در متد onPressed دکمه Register
                       await AuthService()
                           .createUserWithEmailAndPassword(
-                            email: _emailController.text,
-                            password: _passwordController.text,
-                          )
+                        email: _emailController.text,
+                        password: _passwordController.text,
+                        senderName: _nameController.text, // <--- این خط را اضافه کنید
+                      )
                           .then((Value) {
-                            Navigator.pop(context);
-                            Navigator.pushNamed(context, ChatScreen.id);
-                          });
+                        Navigator.pop(context);
+                        Navigator.pushNamed(context, ChatScreen.id);
+                      });
                       setState(() {
                         showSpinner = false;
                       });
@@ -130,6 +145,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       });
                     }
                   }
+                  print('*********************************************************$_nameController');
                 },
               ),
             ],
