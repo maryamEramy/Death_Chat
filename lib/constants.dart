@@ -8,6 +8,8 @@ var kSendButtonColor = Colors.blueAccent;
 var kLoginColor = Colors.purple[200];
 var kRegistrationColor = Colors.orangeAccent[200];
 
+const bubbleRadius = 20.0;
+
 const kSendButtonTextStyle = TextStyle(
   color: Colors.lightBlueAccent,
   fontWeight: FontWeight.bold,
