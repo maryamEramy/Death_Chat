@@ -1,0 +1,29 @@
+io.flutter.plugins.firebase.core.firebase_core-jetified-startup-runtime-1.1.1-0 C:\Users\maryam\.gradle\caches\8.10.2\transforms\02b1dbdc07123ddac45395b0ee1315a2\transformed\jetified-startup-runtime-1.1.1\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-play-services-basement-18.3.0-1 C:\Users\maryam\.gradle\caches\8.10.2\transforms\1d57df6b2eeab5fb7cb22ae168b8c9e5\transformed\jetified-play-services-basement-18.3.0\res
+io.flutter.plugins.firebase.core.firebase_core-fragment-1.7.1-2 C:\Users\maryam\.gradle\caches\8.10.2\transforms\3ce06eb85a55d2a5a6c397f94bd650b6\transformed\fragment-1.7.1\res
+io.flutter.plugins.firebase.core.firebase_core-core-1.13.1-3 C:\Users\maryam\.gradle\caches\8.10.2\transforms\4aa1edd85c2091ac8f7dfe961cf68d36\transformed\core-1.13.1\res
+io.flutter.plugins.firebase.core.firebase_core-core-runtime-2.2.0-4 C:\Users\maryam\.gradle\caches\8.10.2\transforms\52f4e2ea31bb710556cf9705b7e5ab92\transformed\core-runtime-2.2.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-core-1.0.0-5 C:\Users\maryam\.gradle\caches\8.10.2\transforms\56eb1ceb8260761dc0783568651e5cfe\transformed\jetified-core-1.0.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-firebase-common-21.0.0-6 C:\Users\maryam\.gradle\caches\8.10.2\transforms\5751ce4f5c107bd99150eb5be971683f\transformed\jetified-firebase-common-21.0.0\res
+io.flutter.plugins.firebase.core.firebase_core-lifecycle-livedata-core-2.7.0-7 C:\Users\maryam\.gradle\caches\8.10.2\transforms\6dd4a444d6beb4d2c3e22e79fae73520\transformed\lifecycle-livedata-core-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-1.2.0-8 C:\Users\maryam\.gradle\caches\8.10.2\transforms\926f94c4d4a8e1c19dff22c4484b0c4d\transformed\jetified-window-1.2.0\res
+io.flutter.plugins.firebase.core.firebase_core-lifecycle-runtime-2.7.0-9 C:\Users\maryam\.gradle\caches\8.10.2\transforms\999ab404d428e35871c01cc41c3798f6\transformed\lifecycle-runtime-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-profileinstaller-1.3.1-10 C:\Users\maryam\.gradle\caches\8.10.2\transforms\9a88dc86e3ea6aa63edae49a680a62f9\transformed\jetified-profileinstaller-1.3.1\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-core-ktx-1.13.1-11 C:\Users\maryam\.gradle\caches\8.10.2\transforms\a0a18a85ac5843d16209459865f86f22\transformed\jetified-core-ktx-1.13.1\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-lifecycle-viewmodel-savedstate-2.7.0-12 C:\Users\maryam\.gradle\caches\8.10.2\transforms\a9b16894284a25cef84d873bf9d49b9a\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-savedstate-1.2.1-13 C:\Users\maryam\.gradle\caches\8.10.2\transforms\acd1bcdc4273db973271d880d78bd555\transformed\jetified-savedstate-1.2.1\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-annotation-experimental-1.4.0-14 C:\Users\maryam\.gradle\caches\8.10.2\transforms\b6c0d7833745d6ddfd0a7155bc431803\transformed\jetified-annotation-experimental-1.4.0\res
+io.flutter.plugins.firebase.core.firebase_core-lifecycle-viewmodel-2.7.0-15 C:\Users\maryam\.gradle\caches\8.10.2\transforms\c27c0b0fb095360a538fd902fbc68186\transformed\lifecycle-viewmodel-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-lifecycle-process-2.7.0-16 C:\Users\maryam\.gradle\caches\8.10.2\transforms\c99ebe07744dd5edf592713d5e891e3a\transformed\jetified-lifecycle-process-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-activity-1.8.1-17 C:\Users\maryam\.gradle\caches\8.10.2\transforms\cc3ab0798d7c2296b724b5c1b86c94ff\transformed\jetified-activity-1.8.1\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-lifecycle-livedata-core-ktx-2.7.0-18 C:\Users\maryam\.gradle\caches\8.10.2\transforms\d0820affd0fe34e68037841b4ad049c2\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-lifecycle-livedata-2.7.0-19 C:\Users\maryam\.gradle\caches\8.10.2\transforms\d7276fb147b941b8245805f9bbec90e7\transformed\lifecycle-livedata-2.7.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-tracing-1.2.0-20 C:\Users\maryam\.gradle\caches\8.10.2\transforms\d9b38c6190ec709ff79f5503a5bbf155\transformed\jetified-tracing-1.2.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-java-1.2.0-21 C:\Users\maryam\.gradle\caches\8.10.2\transforms\e1f9f0694e9918c7cf396b766bb7c790\transformed\jetified-window-java-1.2.0\res
+io.flutter.plugins.firebase.core.firebase_core-main-22 C:\Users\maryam\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.13.1\android\src\main\res
+io.flutter.plugins.firebase.core.firebase_core-release-23 C:\Users\maryam\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.13.1\android\src\release\res
+io.flutter.plugins.firebase.core.firebase_core-pngs-24 C:\my flutter projects\flash_chat\build\firebase_core\generated\res\pngs\release
+io.flutter.plugins.firebase.core.firebase_core-resValues-25 C:\my flutter projects\flash_chat\build\firebase_core\generated\res\resValues\release
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-26 C:\my flutter projects\flash_chat\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-27 C:\my flutter projects\flash_chat\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.core.firebase_core-merged_res-28 C:\my flutter projects\flash_chat\build\firebase_core\intermediates\merged_res\release

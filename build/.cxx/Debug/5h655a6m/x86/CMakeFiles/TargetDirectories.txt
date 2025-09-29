@@ -1,0 +1,2 @@
+C:/my flutter projects/flash_chat/build/.cxx/Debug/5h655a6m/x86/CMakeFiles/edit_cache.dir
+C:/my flutter projects/flash_chat/build/.cxx/Debug/5h655a6m/x86/CMakeFiles/rebuild_cache.dir

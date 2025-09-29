@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flash_chat/components/rounded_button.dart';
 import 'package:flash_chat/constants.dart';
@@ -51,6 +52,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
+              DefaultTextStyle(
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 45.0,
+                  color: Colors.white,
+                ),
+                child: AnimatedTextKit(
+                  totalRepeatCount: 1,
+                  animatedTexts: [TypewriterAnimatedText('Log In....')],
+                ),
+              ),
+
               SizedBox(height: 48.0),
               Form(
                 key: _formKey,

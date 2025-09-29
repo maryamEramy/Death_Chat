@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flash_chat/components/message_bubble.dart';
+import 'package:flash_chat/components/message_ui.dart';
 import 'package:flash_chat/constants.dart';
 import 'package:flash_chat/services/auth_service.dart';
 import 'package:flutter/material.dart';
@@ -103,22 +103,22 @@ class MessageStream extends StatelessWidget {
         }
         if (snapshot.hasData) {
           var messages = snapshot.data!.docs;
-          List<Widget> messageBubbles = [];
+          List<Widget> messageUi = [];
           for (var message in messages) {
             var messageText = message.get('text');
             var senderEmail = message.get('sender');
             var senderName = message.get('senderName');
-            var messageBubble = MessageBubble(
+            var messageBubble = MessageUi(
               message: messageText,
               sender: senderName,
               isMe: AuthService().getCurrentUser?.email == senderEmail,
             );
-            messageBubbles.add(messageBubble);
+            messageUi.add(messageBubble);
           }
           return ListView(
             reverse: true,
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-            children: messageBubbles,
+            children: messageUi,
           );
         } else {
           return const Center(child: Text('No messages yet.'));

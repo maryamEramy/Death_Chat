@@ -1,0 +1,31 @@
+<variant
+    name="release"
+    package="io.flutter.plugins.firebase.core"
+    minSdkVersion="21"
+    targetSdkVersion="21"
+    mergedManifest="C:\my flutter projects\flash_chat\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="C:\my flutter projects\flash_chat\build\firebase_core\intermediates\default_proguard_files\global\proguard-android.txt-8.2.2"
+    partialResultsDir="C:\my flutter projects\flash_chat\build\firebase_core\intermediates\lint_vital_partial_results\release\out"
+    desugaredMethodsFiles="C:\Users\maryam\.gradle\caches\8.10.2\transforms\13537dc360a88ca22f7c569b0f165f94\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\release\java;src\main\kotlin;src\release\kotlin"
+        resDirectories="src\main\res;src\release\res"
+        assetsDirectories="src\main\assets;src\release\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="C:\my flutter projects\flash_chat\build\firebase_core\intermediates\javac\release\classes;C:\my flutter projects\flash_chat\build\firebase_core\intermediates\compile_r_class_jar\release\R.jar"
+      type="MAIN"
+      applicationId="io.flutter.plugins.firebase.core"
+      generatedSourceFolders="C:\my flutter projects\flash_chat\build\firebase_core\generated\ap_generated_sources\release\out;C:\my flutter projects\flash_chat\build\firebase_core\generated\source\buildConfig\release"
+      generatedResourceFolders="C:\my flutter projects\flash_chat\build\firebase_core\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\maryam\.gradle\caches\8.10.2\transforms\13537dc360a88ca22f7c569b0f165f94\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

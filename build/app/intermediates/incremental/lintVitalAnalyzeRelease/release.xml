@@ -1,0 +1,37 @@
+<variant
+    name="release"
+    package="com.example.flash_chat"
+    minSdkVersion="23"
+    targetSdkVersion="35"
+    shrinking="true"
+    mergedManifest="C:\my flutter projects\flash_chat\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="C:\my flutter projects\flash_chat\build\app\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.2.2;C:\Users\maryam\dev\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
+    partialResultsDir="C:\my flutter projects\flash_chat\build\app\intermediates\lint_vital_partial_results\release\out"
+    desugaredMethodsFiles="C:\Users\maryam\.gradle\caches\8.10.2\transforms\13537dc360a88ca22f7c569b0f165f94\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\release\java;src\main\kotlin;src\release\kotlin"
+        resDirectories="src\main\res;src\release\res"
+        assetsDirectories="src\main\assets;src\release\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <artifact
+      classOutputs="C:\my flutter projects\flash_chat\build\app\intermediates\javac\release\classes;C:\my flutter projects\flash_chat\build\app\tmp\kotlin-classes\release;C:\my flutter projects\flash_chat\build\app\kotlinToolingMetadata;C:\my flutter projects\flash_chat\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      type="MAIN"
+      applicationId="com.example.flash_chat"
+      generatedSourceFolders="C:\my flutter projects\flash_chat\build\app\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="C:\my flutter projects\flash_chat\build\app\generated\res\google-services\release;C:\my flutter projects\flash_chat\build\app\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\maryam\.gradle\caches\8.10.2\transforms\13537dc360a88ca22f7c569b0f165f94\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>
